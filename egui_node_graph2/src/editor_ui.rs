@@ -690,7 +690,8 @@ where
             ui.horizontal(|ui| {
                 ui.add(Label::new(
                     RichText::new(&self.graph[self.node_id].label)
-                        .text_style(TextStyle::Button)
+                        .text_style(TextStyle::Heading)
+                        .size(15.0)
                         .color(text_color),
                 ));
                 responses.extend(self.graph[self.node_id].user_data.top_bar_ui(
